@@ -3335,7 +3335,7 @@ window.__require = function e(t, n, o) {
                     var t = this;
                     if (this.node.x < -this.bianjieX && (this.node.x = -this.bianjieX), this.node.x > this.bianjieX && (this.node.x = this.bianjieX), this.notTargetTime += e, this.returnNumber && (this.scheduleOnce(function() {
                             t.getNumberTime = 0
-                        }, .25), this.returnNumber = !1), "fruitNode" == this.node.parent.name && (this.testEndDJS += e), this.node.y + this.node.width / 2 > cc.find("Canvas/lineNode").children[0].y && 0 == this.pengzhuangCount && this.endCtrl && 0 == this.endOne && this.testEndDJS > 50) {
+                        }, .25), this.returnNumber = !1), "fruitNode" == this.node.parent.name && (this.testEndDJS += e), this.node.y + this.node.width / 2 > cc.find("Canvas/lineNode").children[0].y && 0 == this.pengzhuangCount && this.endCtrl && 0 == this.endOne && this.testEndDJS > 15) {
                         a.default.GameUpdateCtrl = !1, a.default.playerTouch = !1;
                         for (var n = 0; n < cc.find("Canvas/fruitNode").children.length; n++) cc.find("Canvas/fruitNode").children[n].removeComponent(cc.PhysicsCircleCollider), cc.find("Canvas/fruitNode").children[n].removeComponent(cc.RigidBody);
                         this.node.color = cc.Color.RED, cc.tween(this.node).to(.3, {
